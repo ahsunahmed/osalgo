@@ -1,0 +1,513 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+
+
+
+/* Reset */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+	font-family: "Roboto", sans-serif;
+	color: #333;
+}
+::selection{
+  background-color: seagreen;
+  color: #fff;
+}
+p{
+	font-size: 14px;
+	color: #333;
+}
+a{
+	text-decoration: none;
+	cursor: pointer;
+	color: #333;
+}
+img{
+	max-width: 100%;
+}
+li{
+	list-style: none;
+}
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* HEADER AREA CSS */
+.header-area .container {
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  align-items: center;
+}
+.header-area {
+  padding: 20px 0;
+  box-shadow: 15px -10px 5px 15px #eee;
+}
+.logo img {
+  width: 100px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: 5px solid #eee;
+}
+nav .menu ul {
+  display: flex;
+  justify-content: ;
+}
+
+nav .menu ul li a {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: verdana;
+  color: #333;
+  font-weight: normal;
+  margin-left: 30px;
+  transition: 0.3s ease-in;
+}
+nav .menu > ul li:hover > a{
+	color: seagreen;
+}
+
+
+/* Submenu CSS */
+.menu ul li{
+  position: relative;
+  line-height: 40px;
+}
+
+.menu ul li ul {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+  position: absolute;
+  top: 100px;
+  line-height: 50px;
+  width: 16%;
+  transition: 0.5s ease-in;
+  visibility: hidden;
+  justify-content: center;
+  background-color: #fff;
+  width: 250px;
+  display: none;
+}
+
+.menu ul li > ul li:hover > a {
+  color: seagreen;
+}
+
+.menu ul li:hover > ul {
+  visibility: visible;
+  display: block;
+  top: 40px;
+}
+
+.menu ul li > ul li:hover{
+  background-color: #ddd;
+}
+
+
+
+/* Banner CSS */
+
+.banner-area {
+  padding: 50px 0;
+}
+.banner-area .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-content h2 {
+  font-size: 80px;
+  line-height: 70px;
+  margin-bottom: -20px;
+}
+.banner-content h2 span{
+	color: seagreen;
+}
+.banner-content h3 {
+  font-size: 35px;
+  color: seagreen;
+}
+.banner-content p {
+  font-size: 22px;
+}
+.banner-img img {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Content CSS */
+.content-area{
+	padding: 100px 0;
+}
+
+.section-title {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.section-title h2 {
+  font-size: 90px;
+  color: #ddd;
+  line-height: 80px;
+}
+.section-title h3 {
+  font-size: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50%;
+}
+.section-title {
+  position: relative;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.single-cards {
+  padding: 30px 20px 20px;
+  border: 1px solid #eee;
+  margin: 10px;
+  flex: 18%;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+
+.single-cards a i {
+  font-size: 35px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddd;
+  padding: 35px;
+  color: #333;
+}
+.single-cards a h4 {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+}
+.single-cards a p {
+  font-size: 17px;
+  text-align: center;
+  line-height: 25px;
+  transition: 0.3s ease-in-out;
+}
+.single-cards:hover {
+  border: 1px solid seagreen;
+}
+.single-cards:hover a>i{
+	color: #fff;
+  background-color: seagreen;
+}
+.single-cards:hover a>h4{  
+  color: seagreen;
+}
+
+/* About Area CSS */
+
+.about-area {
+  padding: 100px 0;
+  background-color: #eee;
+}
+.about-area .container .section-title h2{
+	color: #ccc;
+}
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-img {
+  flex: 30%;
+}
+.content {
+  flex: 50%;
+  padding: 0px 0px 0px 40px;
+}
+.about-img img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  padding: 5px;
+  background-color: #eee;
+}
+.content p {
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
+  color: #333;
+}
+
+.content a{
+	display: inline-block;
+	text-decoration: none;
+	color: #fff;
+	background-color: seagreen;
+	padding: 20px 30px;
+	margin-right: 10px;
+	margin-top: 40px;
+	width: 200px;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 8px;
+	border: 1px solid #eee;
+}
+
+/* Contact Area CSS */
+.contact-area{
+  padding: 80px 0;
+  background-color: seagreen;
+}
+
+.contact-div{
+  display: flex;
+  justify-content: space-between;
+}
+.left-contact form label {
+  display: block;
+  font-size: 28px;
+  color: #fff;
+  font-weight: bold;
+}
+.left-contact form input {
+  width:100%;
+  padding: 10px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  line-height: ;
+  margin: 10px 0px 30px;
+}
+.left-contact form textarea {
+  width: 100%;
+  padding: 10px;
+  height: 150px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  margin: 10px 0px 20px;
+}
+
+.left-contact form input[type=button] {
+  width: 250px;
+  display: block;
+  color: #fff;
+  background-color: seagreen;
+  cursor: pointer;
+  font-size: 22px;
+  border-radius: 30px;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid #fff;
+}
+
+.left-contact {
+  flex: 45%;
+}
+.right-contact {
+  flex: 45%;
+}
+
+.right-contact iframe {
+  width: 500px;
+  float: right;
+}
+
+
+/* Footer CSS */
+
+.footer-left a img {
+  wid: ;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-right a {
+  display: block;
+  font-size: 22px;
+  text-transform: uppercase;
+  line-height: 30px;
+  color: #fff;
+}
+.footer-area {
+  background-color: #333;
+  padding: 100px 0 50px;
+}
+.footer-message p {
+  text-align: center;
+  color: #ccc;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: ;
+  margin-top: 200px;
+}
+
+/* Algorithm Page CSS */
+.title-area{
+  padding: 100px 0 50px;
+  text-align: center;
+}
+.title-area h2{
+  font-size: 60px;
+}
+
+.fcfs-content{
+  padding-bottom: 100px;
+}
+#fcfs-form{
+  padding: 40px;
+  border: 1px solid #ddd;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+  margin: 0 auto;
+  max-width: 600px;
+  border-radius: 8px;
+}
+#fcfs-form label,input{
+  display: block; 
+  font-size: 22px;
+  color: #333;
+}
+#fcfs-form input{
+  padding: 10px;
+  outline: none;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  max-width: 580px;
+  width: 100%;
+}
+
+.btn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.btn input{
+  flex: 40%;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  margin-bottom: 0;
+}
+.btn input:nth-child(1){
+  margin-right: 20px;
+}
+
+
+/*INPUT FORM CSS*/
+
+.inputs {
+  max-width: 600px;
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 12px;
+  margin: 0 auto 20px;
+  text-align: center;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}
+.inputs label,input {
+  display: block;
+}
+.inputs label{
+	font-size: 22px;
+	font-weight: 600;
+}
+.inputs input {
+  outline: none;
+  width: 500px;
+  margin: 10px auto;
+  border-radius: 8px;
+  border: 1px transparent;
+  padding: 10px;
+}
+.inputs button{
+	font-size; 22px;
+	color: #fff;
+	background-color: seagreen;
+	padding: 10px 30px;
+	border: 1px solid transparent;
+	outline: none;
+	border-radius: 8px;
+	font-size: 18px;
+}
+
+
+#message {
+  font-size: 22px;
+  font-weight: 600;
+  color: red;
+  margin-top: 20px;
+}
+
+/* RESULT TABLE CSS*/
+
+
+#result-title {
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.result_avg {
+  font-size: 18px;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.result_table {
+  background-color: #ddd;
+  width: 600px;
+  border-radius: 4px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}
+.result_table table tbody tr td {
+  font-size: 20px;
+  padding: 10px;
+}
+.result_table table tbody tr:nth-child(1) {
+  background-color: seagreen;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+}
+
+.result_table table th {
+  background-color: seagreen;
+  padding: 20px;
+}
+
+.result_table{
+  padding-top: 10px;
+}
